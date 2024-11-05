@@ -1,7 +1,7 @@
 # settings.py
 
 from pathlib import Path
-
+import os
 # Define the base directory
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -75,8 +75,14 @@ USE_I18N = True
 USE_TZ = True
 
 # Static files configuration
+# Static files (CSS, JavaScript, Images)
 STATIC_URL = '/static/'
-STATIC_ROOT = BASE_DIR / 'staticfiles'
+
+# This should point to your static files directory
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, 'static'),
+]
+
 
 # Default primary key field type
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'

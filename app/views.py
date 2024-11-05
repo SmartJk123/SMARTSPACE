@@ -1,10 +1,7 @@
 from django.shortcuts import render
 
 def home(request):
-    return render(request, 'home.html')
-
-def index(request):
-    return render(request, 'index.html')
+    return render(request, 'app/homepage.html')
 
 def addproperty(request):
     return render(request, 'addproperty.html')
