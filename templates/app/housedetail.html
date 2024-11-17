@@ -1,0 +1,301 @@
+{% extends 'base.html'%}
+  {% load static%}
+
+  {%block content%}
+    <!-- ===============================================-->
+    <!--    Main Content-->
+    <!-- ===============================================-->
+    <main class="main" id="top">
+      <div class="bg-primary-subtle py-2">
+        <div class="container-medium d-flex align-items-center justify-content-between"><a class="btn btn-link p-0 text-body" href="../../../../pages/authentication/card/sign-in.html"><span class="" data-fa-transform="down-1"></span></a>
+          <div class="dropdown"><button class="btn btn-sm p-0 d-md-none fs-8" type="button" data-bs-toggle="dropdown" data-boundary="window" aria-haspopup="true" aria-expanded="false" data-bs-reference="parent"><span class="fas fa-ellipsis-h"></span></button>
+            <ul class="dropdown-menu dropdown-menu-end" style="z-index: 9999">
+            </ul>
+          </div>
+          <ul class="d-none d-md-flex gap-5 list-unstyled mb-0">
+          </ul>
+        </div>
+      </div>
+      <div class=" sticky-top" style="background-color: #197E81;" data-navbar-shadow-on-scroll="data-navbar-shadow-on-scroll">
+        <nav class="navbar navbar-landing navbar-expand-lg container-medium"><a class="navbar-brand flex-1 flex-lg-grow-0 me-lg-8 me-xl-13" href="homepage">
+            <div class="d-flex align-items-center"><img src="{% static "assets/img/icons/logo.png" %}" alt="SmartSpace" width="77" />
+              <h5 class="logo-text ms-2">SmartSpace</h5>
+            </div>
+          </a>
+          <div class="d-flex align-items-center gap-2 gap-sm-3 gap-md-4 my-2 order-lg-1">
+            <div class="theme-control-toggle fa-icon-wait"><input class="form-check-input ms-0 theme-control-toggle-input" type="checkbox" data-theme-control="SmartSpaceTheme" value="dark" id="themeControlToggleSm" /><label class="mb-0 theme-control-toggle-label theme-control-toggle-light" for="themeControlToggleSm" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Switch theme" style="height:32px;width:32px;"><span class="icon" data-feather="moon"></span></label><label class="mb-0 theme-control-toggle-label theme-control-toggle-dark" for="themeControlToggleSm" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Switch theme" style="height:32px;width:32px;"><span class="icon" data-feather="sun"></span></label></div><a class="btn btn-link text-body-tertiary p-0" href="#!"><span data-feather="map-pin" style="width: 18px; height: 18px"></span></a><a class="btn btn-link text-body-tertiary p-0" href="#!"><span data-feather="bell" style="width: 20px; height: 20px"></span></a><a class="btn btn-link text-body-tertiary p-0 me-2 me-lg-0" href="#!"><span data-feather="user" style="width: 20px; height: 20px"></span></a>
+          </div><button class="navbar-toggler fs-8 ps-1 ps-sm-3 pe-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mt-3 mt-lg-0">
+              <li class="nav-item border-bottom border-translucent border-bottom-lg-0"><a class="nav-link" href="house/customer/homepage.html">House</a></li>
+              <li class="nav-item border-bottom border-translucent border-bottom-lg-0"><a class="nav-link" href="house/homepage.html">Home</a></li>
+              <li class="nav-item border-bottom border-translucent border-bottom-lg-0"><a class="nav-link" href="trip/homepage.html">Amenities</a></li>
+              {% comment %} <li class="nav-item border-bottom border-translucent border-bottom-lg-0"><a class="nav-link" href="../events/event-detail.html">Event</a></li>
+              <li class="nav-item border-bottom border-translucent border-bottom-lg-0"><a class="nav-link" href="#!">Package</a></li> {% endcomment %}
+              <li class="nav-item"><a class="nav-link" href="#!">Trending</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+
+      <!-- ============================================-->
+      <!-- <section> begin ============================-->
+      <section class="pt-4 pb-9">
+        <div class="container-medium">
+          <nav class="mb-3" aria-label="breadcrumb">
+            <ol class="breadcrumb mb-0">
+              <li class="breadcrumb-item"><a href="#">Page 1</a></li>
+              <li class="breadcrumb-item"><a href="#">Page 2</a></li>
+              <li class="breadcrumb-item active" aria-current="page">Default</li>
+            </ol>
+          </nav>
+          <h2 class="mb-4">Deluxe 1 Bedroom</h2>
+          <div class="row g-4 flex-between-end mb-5">
+            <div class="col-md-8 col-lg-9">
+              <h1 class="mb-2 fw-semibold"> Garden house,Wing A</h1>
+              <div class="mb-1"><a class="text-body-tertiary" href="#!"><span class="fa-solid fa-map-marker-alt me-2 text-body"></span>Safari Park Road, Nairobi</a></div>
+              <div class="mb-1"><a class="text-body-tertiary" href="tel:+88029834555"><span class="fa-solid fa-phone me-2 text-body"></span>+880 29834555</a></div>
+              <div class="mb-1"><a class="text-body-tertiary" href="mailto:sales@smartspace.com"><span class="fa-solid fa-envelope me-2 text-body" data-fa-transform="down-1"></span>sales@smartspace.com</a></div>
+            </div>
+            <div class="col-md-4 col-lg-3">
+              <div class="d-flex flex-md-column align-items-center align-items-md-end gap-3">
+                <h5 class="mb-0 text-nowrap"><span class="text-body-tertiary me-2 fw-normal">Rated</span><span class="text-primary me-2">Amazing</span><span class="badge text-bg-primary">4.8</span></h5><a class="btn btn-Smartspace-primary px-5 px-lg-8 w-100 w-md-auto" href="#!"><span class="fa-solid fa-map me-2"> </span>Show in map</a>
+              </div>
+            </div>
+          </div>
+          <div class="row g-3">
+            <div class="col-xl-8">
+              <div class="row g-3 mb-3">
+                <div class="col-md-6"><a href="{% static "assets/img/houses/25.jpeg" %}" data-gallery="house-details-gallery"> <img class="img-fluid rounded-2" src="{% static "assets/img/houses/25.jpeg" %}" alt="" /></a></div>
+                <div class="col-6 d-none d-md-block">
+                  <div class="row g-3">
+                    <div class="col-12"><a href="{% static "assets/img/houses/26.png" %}" data-gallery="house-details-gallery"> <img class="img-fluid rounded-2" src="{% static "assets/img/houses/26.png" %}" alt="" /></a></div>
+                    <div class="col-6"><a href="{% static "assets/img/houses/26.jpeg" %}" data-gallery="house-details-gallery"> <img class="img-fluid rounded-2" src="{% static "assets/img/houses/26.jpeg" %}" alt="" /></a></div>
+                    <div class="col-6"><a href="{% static "assets/img/houses/28.jpeg" %}" data-gallery="house-details-gallery"> <img class="img-fluid rounded-2" src="{% static "assets/img/houses/28.jpeg" %}" alt="" /></a></div>
+                  </div>
+                </div>
+                <div class="col-3 d-none d-md-block"><a href="{% static "assets/img/houses/28.jpeg" %}" data-gallery="house-details-gallery"><img class="img-fluid rounded-2" src="{% static "assets/img/houses/28.jpeg" %}" alt="" /></a></div>
+                <div class="col-3 d-none d-md-block"><a href="{% static "assets/img/houses/28.jpeg" %}" data-gallery="house-details-gallery"><img class="img-fluid rounded-2" src="{% static "assets/img/houses/28.jpeg" %}" alt="" /></a></div>
+                <div class="col-3 d-none d-md-block"><a href="{% static "assets/img/houses/28.jpeg" %}" data-gallery="house-details-gallery"><img class="img-fluid rounded-2" src="{% static "assets/img/houses/28.jpeg" %}" alt="" /></a></div>
+                <div class="col-md-3">
+                  <div class="position-relative rounded-2 overflow-hidden"><a href="{% static "assets/img/houses/26.jpeg" %}" data-gallery="house-details-gallery"> <img class="w-100 h-md-100 object-fit-cover" src="{% static "assets/img/houses/26.jpeg" %}" alt="" height="43" /></a>
+                    <div class="position-absolute w-100 h-100 left-0 top-0 d-flex flex-center bg-black bg-opacity-50"><a class="text-white stretched-link" href="gallery.html">Show all</a></div>
+                  </div>
+                </div>
+              </div>
+              <div class="scrollbar mt-5 mb-3 pb-3">
+                <ul class="nav nav-pills flex-nowrap" data-tab-map-container="data-tab-map-container" role="tablist">
+                  <li class="nav-item"><button class="nav-link active" id="pills-availability-tab" data-bs-toggle="pill" data-bs-target="#pills-availability" type="button" role="tab" aria-controls="pills-availability" aria-selected="true">Availability</button></li>
+                  <li class="nav-item"><button class="nav-link" id="pills-description-tab" data-bs-toggle="pill" data-bs-target="#pills-description" type="button" role="tab" aria-controls="pills-description" aria-selected="true">Description</button></li>
+                  <li class="nav-item"><button class="nav-link" id="pills-policy-tab" data-bs-toggle="pill" data-bs-target="#pills-policy" type="button" role="tab" aria-controls="pills-policy" aria-selected="true">Policy</button></li>
+                  <li class="nav-item"><button class="nav-link" id="pills-facilities-tab" data-bs-toggle="pill" data-bs-target="#pills-facilities" type="button" role="tab" aria-controls="pills-facilities" aria-selected="true">Facilities</button></li>
+                  <li class="nav-item"><button class="nav-link" id="pills-reviews-tab" data-bs-toggle="pill" data-bs-target="#pills-reviews" type="button" role="tab" aria-controls="pills-reviews" aria-selected="true">Reviews</button></li>
+                </ul>
+              </div>
+              <div class="tab-content" id="house-details-tab-content">
+                <div class="tab-pane fade show active" id="pills-availability" role="tabpanel" aria-labelledby="pills-availability-tab" tabindex="0">
+                  <h3 class="mb-3 fw-bold">Availability</h3>
+                  <div class="card">
+                    <div class="card-body">
+                      <div class="row g-3">
+                        <div class="col-sm-6 col-lg-3"><label class="fw-bold text-body-tertiary mb-1" for="checkIn">Check in</label>
+                          <div class="form-icon-container flatpickr-input-container"><input class="form-control form-icon-input datetimepicker" id="checkIn" type="text" placeholder="26 Jan, 2025" data-options='{"disableMobile":true}' /><span class="fa-solid fa-calendar text-body fs-9 form-icon"></span></div>
+                        </div>
+                        <div class="col-sm-6 col-lg-3"><label class="fw-bold text-body-tertiary mb-1" for="checkOut">Check out</label>
+                          <div class="form-icon-container flatpickr-input-container"><input class="form-control form-icon-input datetimepicker" id="checkOut" type="text" placeholder="26 Jan, 2027" data-options='{"disableMobile":true}' /><span class="fa-solid fa-calendar text-body fs-9 form-icon"></span></div>
+                        </div>
+                        {% comment %} <div class="col-sm-6 col-lg-3"><label class="fw-bold text-body-tertiary mb-1">Adults</label>
+                          <div class="input-group gap-2" data-quantity="data-quantity"><button class="btn btn-Smartspace-primary rounded px-3" data-type="minus"><span class="fa-solid fa-minus"></span></button><input class="form-control border-translucent input-spin-none text-center rounded" id="adult" type="number" value="2" /><button class="btn btn-Smartspace-primary rounded px-3" data-type="plus"><span class="fa-solid fa-plus"></span></button></div>
+                        </div> {% endcomment %}
+                        <div class="col-sm-auto ms-auto align-self-end"><button class="btn btn-primary w-100">Update Results</button></div>
+                      </div>
+                    </div>
+                  </div>
+                  <hr class="my-6" />
+                  <div class="row g-3 mb-4">
+                    <div class="col-lg-8 col-xxl-7">
+                      <div class="row flex-lg-nowrap g-3 mb-2">
+                        <div class="col-md-auto">
+                          <h4 class="mb-0 fw-semibold"><span class="fa-solid fa-circle fs-9 text-body-primary me-2" data-fa-transform="up-1"></span>One Bedroom</h4>
+                        </div>
+                        
+                      <p class="mb-0">A standard double queen room has two queen-sized beds and may accept up to two people for a convenient and comfortable stay.</p>
+                    </div>
+                    <div class="col-lg-4 col-xxl-5">
+                      <h3 class="mb-2 d-flex align-items-center justify-content-lg-end gap-2">30,000 Ksh</h3>
+                      <h5 class="text-body text-lg-end fw-normal">30,000Ksh deposit fees</h5>
+                    </div>
+                  </div>
+                  <div class="row g-3">
+                    <div class="col-lg-7">
+                      <div class="row gx-2 h-100">
+                        <div class="col-4"><a href="{% static "assets/img/gallery/55.jpg" %}" data-gallery="room-gallery-0"><img class="w-100 h-100 object-fit-cover rounded-2" src="{% static "assets/img/gallery/55.jpg" %}" alt="" /></a></div>
+                        <div class="col-4"><a href="{% static "assets/img/gallery/53.jpeg" %}" data-gallery="room-gallery-0"><img class="w-100 h-100 object-fit-cover rounded-2" src="{% static "assets/img/gallery/53.jpeg" %}" alt="" /></a></div>
+                        <div class="col-4"><a href="{% static "assets/img/gallery/52.jpeg" %}" data-gallery="room-gallery-0"><img class="w-100 h-100 object-fit-cover rounded-2" src="{% static "assets/img/gallery/52.jpeg" %}" alt="" /></a></div>
+                      </div>
+                    </div>
+                    <div class="col-lg-4 col-xl-5 col-xxl-4 ms-auto">
+                      <div class="card bg-body-highlight">
+                        <div class="card-body">
+                          <ul class="mb-2 list-unstyled d-flex list flex-wrap gap-2">
+                            <li class="text-body-highlight fs-9 me-1 mb-0 lh-1"><span class="fa-solid fa-check text-success me-1"> </span>wifi</li>
+                            <li class="text-body-highlight fs-9 me-1 mb-0 lh-1"><span class="fa-solid fa-check text-success me-1"> </span>tv</li>
+                            <li class="text-body-highlight fs-9 me-1 mb-0 lh-1"><span class="fa-solid fa-check text-success me-1"> </span>common area</li>
+                            <li class="text-body-highlight fs-9 me-1 mb-0 lh-1"><span class="fa-solid fa-check text-success me-1"> </span>bathtub</li>
+                            <li class="text-body-highlight fs-9 me-1 mb-0 lh-1"><span class="fa-solid fa-check text-success me-1"> </span>Heating</li>
+                            <li class="text-body-highlight fs-9 me-1 mb-0 lh-1"><span class="fa-solid fa-check text-success me-1"> </span>Telephone</li>
+                          </ul><a class="fw-bold fs-9" href="#!">Show other amenities </a>
+                        </div>
+                      </div><button class="btn btn-outline-primary w-100 mt-3">Add House</button>
+                    </div>
+                  </div>
+                  <hr class="my-6" />
+                  <div class="row g-3 mb-4">
+                    <div class="col-lg-8 col-xxl-7">
+                      <div class="row flex-lg-nowrap g-3 mb-2">
+                        <div class="col-md-auto">
+                          <h4 class="mb-0 fw-semibold"><span class="fa-solid fa-circle fs-9 text-body-primary me-2" data-fa-transform="up-1"></span>2 bedroom house</h4>
+                        </div>
+                        
+                      <p class="mb-0">A standard double king room is a house room with two king-size beds that can comfortably fit up to four guests.</p>
+                    </div>
+                    <div class="col-lg-4 col-xxl-5">
+                      <h3 class="mb-2 d-flex align-items-center justify-content-lg-end gap-2">60,000 Ksh</h3>
+                      <h5 class="text-body text-lg-end fw-normal">60,000Ksh for deposit fees</h5>
+                    </div>
+                  </div>
+                  <div class="row g-3">
+                    <div class="col-lg-7">
+                      <div class="row gx-2 h-100">
+                        <div class="col-4"><a href="{% static "assets/img/houses/hd36.jpeg" %}" data-gallery="room-gallery-1"><img class="w-100 h-100 object-fit-cover rounded-2" src="{% static "assets/img/houses/hd36.jpeg" %}" alt="" /></a></div>
+                        <div class="col-4"><a href="{% static "assets/img/houses/hd37.jpeg" %}" data-gallery="room-gallery-1"><img class="w-100 h-100 object-fit-cover rounded-2" src="{% static "assets/img/houses/hd37.jpeg" %}" alt="" /></a></div>
+                        <div class="col-4"><a href="{% static "assets/img/houses/hd38.jpeg" %}" data-gallery="room-gallery-1"><img class="w-100 h-100 object-fit-cover rounded-2" src="{% static "assets/img/houses/hd38.jpeg" %}" alt="" /></a></div>
+                      </div>
+                    </div>
+                    <div class="col-lg-4 col-xl-5 col-xxl-4 ms-auto">
+                      <div class="card bg-body-highlight">
+                        <div class="card-body">
+                          <ul class="mb-2 list-unstyled d-flex list flex-wrap gap-2">
+                            <li class="text-body-highlight fs-9 me-1 mb-0 lh-1"><span class="fa-solid fa-check text-success me-1"> </span>wifi</li>
+                            <li class="text-body-highlight fs-9 me-1 mb-0 lh-1"><span class="fa-solid fa-check text-success me-1"> </span>tv</li>
+                            <li class="text-body-highlight fs-9 me-1 mb-0 lh-1"><span class="fa-solid fa-check text-success me-1"> </span>common area</li>
+                            <li class="text-body-highlight fs-9 me-1 mb-0 lh-1"><span class="fa-solid fa-check text-success me-1"> </span>bathtub</li>
+                            <li class="text-body-highlight fs-9 me-1 mb-0 lh-1"><span class="fa-solid fa-check text-success me-1"> </span>Heating</li>
+                            <li class="text-body-highlight fs-9 me-1 mb-0 lh-1"><span class="fa-solid fa-check text-success me-1"> </span>Telephone</li>
+                          </ul><a class="fw-bold fs-9" href="#!">Show other amenities </a>
+                        </div>
+                      </div><button class="btn btn-outline-primary w-100 mt-3">Add House</button>
+                    </div>
+                  </div>
+                </div>
+            <div class="col-xl-12">
+              <div class="card mt-12 mt-xl-0">
+                <div class="card-body">
+                  <h5 class="mb-12">Summary</h5>
+                  <div class="card mb-12">
+                    <div class="card-body"><button class="btn p-0 position-absolute end-0 fs-8 mt-n5 me-n2 text-body-primary
+                      "><span class="fa-solid fa-circle-xmark"></span></button>
+                      <div class="d-flex justify-content-between gap-3 mb-4">
+                        <div>
+                          <h5 class="text-body-highlight">1 Bedroom</h5>
+                          <p class="mb-0 text-body-tertiary">Super deluxe</p>
+                        </div>
+                        <h4 class="mb-0">30,000 Ksh</h4>
+                      </div>
+                      <div class="row align-items-center g-0">
+                        <div class="col-3">
+                          <h5 class="text-body text-nowrap mb-0">Check in</h5>
+                        </div>
+                        <div class="col-auto"><span class="px-2">:</span></div>
+                        <div class="col-auto"><span>25 January, 2023</span></div>
+                      </div>
+                      <div class="row align-items-center g-0 mb-12">
+                        <div class="col-3">
+                          <h5 class="text-body text-nowrap mb-0">Check out</h5>
+                        </div>
+                        <div class="col-auto"><span class="px-2">:</span></div>
+                        <div class="col-auto"><span>27 January, 2023</span></div>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div class="px-4 py-3 bg-body-highlight rounded-2">
+                    <div class="d-flex flex-between-center mb-2">
+                      <h6 class="text-body-tertiary fw-semibold">Sub-total</h6>
+                      <h6 class="text-body-highlight fw-semibold">30,000 Ksh</h6>
+                    </div>
+                    <div class="d-flex flex-between-center">
+                      <h6 class="text-body-tertiary fw-semibold">Discount</h6>
+                      <h6 class="text-body-tertiary fw-semibold">0</h6>
+                    </div>
+                    <hr />
+                    <div class="d-flex flex-between-center">
+                      <h4 class="text-body">Total</h4>
+                      <h4 class="text-body">30,000 Ksh</h4>
+                    </div>
+                  </div><a class="btn btn-primary mt-3 w-100" href="payment"> Proceed with booking</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div><!-- end of .container-->
+      </section><!-- <section> close ============================-->
+      <!-- ============================================-->
+
+      <section class="py-0 mb-9">
+        <div class="container-medium-md px-0 px-md-3">
+          <div class="p-5 p-sm-7 py-xl-12 px-xl-15 rounded-md-2 overflow-hidden position-relative">
+            <div class="bg-holder bg-holder overlay bg-opacity-85" style="background-image:url({% static "assets/img/bg/43.png" %});background-position: center; background-size: cover;"></div>
+            <!--/.bg-holder-->
+            <div class="row g-5 position-relative justify-content-between">
+              <div class="col-md-6 col-lg-3">
+                <h5 class="text-white mb-3">Discover</h5>
+                <div class="row g-3">
+                  <div class="col">
+                    <ul class="list-unstyled mb-0">
+                      <li class="mb-1"><a class="text-secondary-lighter" href="#!">Home</a></li>
+                      <li class="mb-1"><a class="text-secondary-lighter" href="#!">Terms</a></li>
+                      <li class="mb-1"><a class="text-secondary-lighter" href="#!">Talent &amp; culture</a></li>
+                      <li class="mb-1"><a class="text-secondary-lighter" href="#!">Destination</a></li>
+                      <li class="mb-1"><a class="text-secondary-lighter" href="#!">Sitemap</a></li>
+                    </ul>
+                  </div>
+                  <div class="col">
+                    <ul class="list-unstyled mb-0">
+                      <li class="mb-1"><a class="text-secondary-lighter" href="#!">Refund policy</a></li>
+                      <li class="mb-1"><a class="text-secondary-lighter" href="#!">EMI Policy</a></li>
+                      <li class="mb-1"><a class="text-secondary-lighter" href="#!">Privacy Policy</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <h5 class="text-white mb-3">Contact</h5><a class="d-block text-secondary-lighter mb-1" href="mailto:info@Smartspacetravels.com"><span class="fa-solid fa-envelope me-2"> </span>info@Smartspacetravels.com</a><a class="d-block text-secondary-lighter mb-1" href="tel:+13134048290"><span class="fa-solid fa-phone me-2"> </span>+254765972170</a>
+              </div>
+              <div class="col-lg-5">
+                <h2 class="text-white mb-2 fw-semibold">Enjoy your trip to the fullest</h2>
+                <p class="mb-5 text-secondary-lighter">Sign up and get notified<br />about best deals immediately </p>
+                <div class="d-flex gap-2">
+                  <div class="form-icon-container flex-1"><input class="form-control form-icon-input" type="text" placeholder="Your email address" /><span class="fa-solid fa-envelope form-icon text-body fs-9" data-fa-transform="up-2"></span></div><button class="btn btn-primary rounded">Sign up</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer class="footer position-relative">
+        <div class="row g-0 justify-content-between align-items-center h-100">
+          <div class="col-12 col-sm-auto text-center">
+            <p class="mb-0 mt-2 mt-sm-0 text-body">Thank you for creating with Smartspace<span class="d-none d-sm-inline-block"></span><span class="d-none d-sm-inline-block mx-1">|</span><br class="d-sm-none" />2024 &copy;<a class="mx-1" href=" "></a></p>
+          </div>
+          <div class="col-12 col-sm-auto text-center">
+            <p class="mb-0 text-body-tertiary text-opacity-85">2024</p>
+          </div>
+        </div>
+      </footer>
+     
+    </main><!-- ===============================================-->
+    <!--    End of Main Content-->
+    <!-- ===============================================-->
+
+{% endblock content%}

@@ -1,0 +1,153 @@
+{% extends 'booth/base.html' %}
+{% load static %}
+
+{% block content %}
+
+{% include 'booth/header.html' %}
+
+
+
+<!-- Section: Design Block -->
+
+
+
+<section class="text-center text-lg-start">
+    <style>
+      .cascading-right {
+        margin-right: -50px;
+      }
+  
+      @media (max-width: 991.98px) {
+        .cascading-right {
+          margin-right: 0;
+        }
+      }
+    </style>
+  
+    <!-- Jumbotron -->
+    <div class="container py-4">
+      <div class="row g-0 align-items-center">
+        <div class="col-lg-6 mb-5 mb-lg-0">
+          <div class="card cascading-right" style="
+              background: hsla(0, 0%, 100%, 0.55);
+              backdrop-filter: blur(30px);
+              ">
+                     <!-- Display errors if any -->
+                {% if messages %}
+                <div class="alert alert-danger">
+                  <ul class="mb-0">
+                    {% for message in messages %}
+                      <li>{{ message }}</li>
+                    {% endfor %}
+                  </ul>
+                </div>
+              {% endif %}
+            <div class="card-body p-5 shadow-5 text-center">
+              <h2 class="fw-bold mb-5">Sign up now</h2>
+              <form method='post' >
+                {% csrf_token %}
+                <!-- 2 column grid layout with text inputs for the first and last names -->
+                <div class="row">
+                  <div class="col-md-6 mb-4">
+                    <div class="form-outline">
+                      <input type="text" id="id_first_name" name="first_name"  class="form-control" />
+                      <label class="form-label" for="form3Example1">Fisrt Name</label>
+                    </div>
+                  </div>
+
+                  <div class="col-md-6 mb-4">
+                    <div class="form-outline">
+                      <input type="text" id="id_last_name" name="last_name"  class="form-control" />
+                      <label class="form-label" for="form3Example1">Last Name</label>
+                    </div>
+                  </div>
+
+                  <div class="col-md-6 mb-4">
+                    <div class="form-outline">
+                      <input type="text" id="id_username" name="username"  class="form-control" />
+                      <label class="form-label" for="form3Example1">Username</label>
+                    </div>
+                  </div>
+
+                  <div class="col-md-6 mb-4">
+                    <div class="form-outline">
+                      <input type="email" id="id_email" name="email"  class="form-control" />
+                      <label class="form-label" for="form3Example1">Email</label>
+                    </div>
+                  </div>
+
+
+                  <div class="col-md-6 mb-4">
+                    <div class="form-outline">
+                      <input type="password" id="id_password1" name="password1"  class="form-control" />
+                      <label class="form-label" for="form3Example1">Password</label>
+                    </div>
+                  </div>
+
+                  <div class="col-md-6 mb-4">
+
+                  <div class="form-outline mb-4">
+                    <input type="password" name="password2" id="id_password2" class="form-control" />
+                    <label class="form-label" for="form3Example4">Confirm Password</label>
+                  </div>
+                  </div>
+                </div>
+  
+              
+
+                
+  
+             
+  
+                <!-- Submit button -->
+                <button type="submit" class="btn btn-primary btn-block mb-4">
+                  Sign in
+                </button>
+  
+                
+              </form>
+
+
+                <!-- Register buttons -->
+                <div class="text-center">
+                  <p>You dont have an account?:</p>
+                  <button type="button" class="btn btn-link btn-floating mx-1">
+                   
+                   <a href="{% url 'register' %}"> Sign Up</a>
+                  </button>
+   
+                  <!-- <button type="button" class="btn btn-link btn-floating mx-1">
+                    <i class="fab fa-google"></i>
+                  </button>
+  
+                  <button type="button" class="btn btn-link btn-floating mx-1">
+                    <i class="fab fa-twitter"></i>
+                  </button>
+  
+                  <button type="button" class="btn btn-link btn-floating mx-1">
+                    <i class="fab fa-github"></i>
+                  </button> -->
+                </div>
+            </div>
+          </div>
+        </div>
+  
+        <div class="col-lg-6 mb-5 mb-lg-0">
+          <img src="https://mdbootstrap.com/img/new/ecommerce/vertical/004.jpg" class="w-100 rounded-4 shadow-4"
+            alt="" />
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Jumbotron -->
+  </section>
+  <!-- Section: Design Block -->
+
+  {% include 'booth/footer.html' %}
+  <!-- ======= Footer ======= -->
+ <!-- End Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+{% endblock %}

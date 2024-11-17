@@ -1,0 +1,309 @@
+{% extends 'app/base.html'%}
+{% load static%}
+
+
+{% block content %}
+ <!-- ===============================================-->
+    <!--    Main Content-->
+    <!-- ===============================================-->
+    <main class="main" id="top">
+      {% comment %} <div class="bg-primary-subtle py-2">
+        <div class="container-medium d-flex align-items-center justify-content-between"><a class="btn btn-link p-0 text-body" href="../../pages/authentication/card/sign-in.html"><span class="fa-solid fa-arrow-right-to-bracket me-2" data-fa-transform="down-1"></span>Agent Login</a>
+          <div class="dropdown"><button class="btn btn-sm p-0 d-md-none fs-8" type="button" data-bs-toggle="dropdown" data-boundary="window" aria-haspopup="true" aria-expanded="false" data-bs-reference="parent"><span class="fas fa-ellipsis-h"></span></button>
+            <ul class="dropdown-menu dropdown-menu-end" style="z-index: 9999">
+              <li><a class="dropdown-item" href="#!">Become a Host</a></li>
+              <li><a class="dropdown-item" href="#!">Blog</a></li>
+              <li><a class="dropdown-item" href="#!">Career</a></li>
+              <li><a class="dropdown-item" href="#!">Support</a></li>
+              <li><a class="dropdown-item" href="#!">+01 123 581321</a></li>
+            </ul>
+          </div>
+          <ul class="d-none d-md-flex gap-5 list-unstyled mb-0">
+            <li><a class="lh-1 text-body-tertiary fw-semibold fs-9" href="#!">Become a Host</a></li>
+            <li><a class="lh-1 text-body-tertiary fw-semibold fs-9" href="#!">Blog</a></li>
+            <li><a class="lh-1 text-body-tertiary fw-semibold fs-9" href="#!">Career</a></li>
+            <li><a class="lh-1 text-body-tertiary fw-semibold fs-9" href="mailto:example@gmail.com"> <span class="fa-regular fa-envelope me-2" data-fa-transform="down-1"></span>Support</a></li>
+            <li><a class="lh-1 text-body-tertiary fw-semibold fs-9" href="tel:+01123581321"> <span class="fa-brands fa-whatsapp me-2"></span>+01 123 581321</a></li>
+          </ul>
+        </div>
+      </div> {% endcomment %}
+      <div class="bg-body-emphasis sticky-top" data-navbar-shadow-on-scroll="data-navbar-shadow-on-scroll">
+        <nav class="navbar navbar-landing navbar-expand-lg container-medium"><a class="navbar-brand flex-1 flex-lg-grow-0 me-lg-8 me-xl-13" href="../../index.html">
+            <div class="d-flex align-items-center"><img src="{% static "assets/img/icons/logo.png" %}" alt="SmartSpace" width="57" />
+              <h5 class="logo-text ms-2">SmartSpace</h5>
+            </div>
+          </a>
+          <div class="d-flex align-items-center gap-2 gap-sm-3 gap-md-4 my-2 order-lg-1">
+            <div class="theme-control-toggle fa-icon-wait"><input class="form-check-input ms-0 theme-control-toggle-input" type="checkbox" data-theme-control="SmartSpaceTheme" value="dark" id="themeControlToggleSm" /><label class="mb-0 theme-control-toggle-label theme-control-toggle-light" for="themeControlToggleSm" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Switch theme" style="height:32px;width:32px;"><span class="icon" data-feather="moon"></span></label><label class="mb-0 theme-control-toggle-label theme-control-toggle-dark" for="themeControlToggleSm" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Switch theme" style="height:32px;width:32px;"><span class="icon" data-feather="sun"></span></label></div><a class="btn btn-link text-body-tertiary p-0" href="#!"><span data-feather="map-pin" style="width: 18px; height: 18px"></span></a><a class="btn btn-link text-body-tertiary p-0" href="#!"><span data-feather="bell" style="width: 20px; height: 20px"></span></a><a class="btn btn-link text-body-tertiary p-0 me-2 me-lg-0" href="#!"><span data-feather="user" style="width: 20px; height: 20px"></span></a>
+          </div><button class="navbar-toggler fs-8 ps-1 ps-sm-3 pe-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mt-3 mt-lg-0">
+              <li class="nav-item border-bottom border-translucent border-bottom-lg-0"><a class="nav-link" href="house/customer/homepage.html">House</a></li>
+              <li class="nav-item border-bottom border-translucent border-bottom-lg-0"><a class="nav-link" href="house/homepage.html">Home</a></li>
+              <li class="nav-item border-bottom border-translucent border-bottom-lg-0"><a class="nav-link" href="trip/homepage.html">Amenities</a></li>
+              {% comment %} <li class="nav-item border-bottom border-translucent border-bottom-lg-0"><a class="nav-link" href="../events/event-detail.html">Event</a></li>
+              <li class="nav-item border-bottom border-translucent border-bottom-lg-0"><a class="nav-link" href="#!">Package</a></li> {% endcomment %}
+              <li class="nav-item"><a class="nav-link" href="#!">Trending</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+      <div class="booking-hero-header d-flex align-items-center">
+        <div class="bg-holder bg-holder overlay bg-opacity-50" style="background-image:url({% static "assets/video/mainvid.jpg" %});"><video class="bg-video" autoplay="autoplay" loop="loop" muted="muted" playsinline="playsinline">
+            <source src="{% static "assets/video/travel.png" %}" type="video/mp4" />
+          </video></div>
+        <!--/.bg-holder-->
+        <div class="container-medium position-relative z-5">
+          <h2 class="text-secondary-lighter fs-5 fs-md-3 fw-normal mb-3">Where is your</h2>
+          <h1 class="fs-4 fs-md-1 text-white fw-normal mb-6 overflow-hidden">NEXT <span class="typed-text text-primary" data-typed-text="[&quot;&lt;span class=text-primary&gt;HOME!&lt;/span&gt;&quot;,&quot;&lt;span class=text-warning&gt;HOUSE?&lt;/span&gt;&quot;, &quot;&lt;span class=text-info&gt;SPACE?&lt;/span&gt;&quot;, &quot;&lt;span class=text-success&gt;PLACE TO LIVE?&lt;/span&gt;&quot;]"></span></h1>
+          <div class="input-group rounded-2 py-1 ps-2 w-lg-50 border border-light">
+              <div class="form-icon-container flex-1 d-flex align-items-center" data-fa-transform="down-1">
+                  <span class="fa-solid fa-location-dot form-icon text-danger-light"></span>
+                  <input class="form-control form-icon-input bg-transparent border-0 outline-none fs-8 fs-md-7 text-secondary-light"
+                         type="text" placeholder="Search Destination" aria-label="Search Destination" />
+              </div>
+              <div class="dropdown d-flex align-items-center">
+                  <button class="btn py-0 bg-transparent text-secondary-light fs-8 fs-md-7 fw-semibold border-0 border-start border-light rounded-0"
+                          type="button" data-bs-toggle="dropdown" data-boundary="window" aria-haspopup="true" aria-expanded="false" 
+                          aria-label="Select house category">
+                     
+                      <span class="fa-solid fa-chevron-down ms-2" data-fa-transform="down-1 shrink-4"></span>
+                  </button>
+                  <div class="dropdown-menu dropdown-menu-end" data-bs-theme="dark">
+                      <a class="dropdown-item" href="#!">Nairobi</a>
+                      <a class="dropdown-item" href="#!">Nakuru</a>
+                      <a class="dropdown-item" href="#!">Eldoret</a>
+                  </div>
+              </div>
+          </div>
+      </div>
+      
+      <!-- Typed.js Initialization -->
+      <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+      <script>
+        document.addEventListener('DOMContentLoaded', function () {
+          var typed = new Typed('.typed-text', {
+            strings: ["<span class='text-primary'>HOME!</span>", "<span class='text-warning'>HOUSE?</span>", "<span class='text-info'>SPACE?</span>", "<span class='text-success'>TO STAY?</span>"],
+            typeSpeed: 5000,
+            backSpeed: 1000,
+            backDelay: 1000,
+            startDelay: 1000,
+            loop: true
+          });
+        });
+      </script>
+      
+          </div>
+        </div>
+      </div>
+
+      <!-- ============================================-->
+      <!-- <section> begin ============================-->
+      <section class="pt-6 pt-md-10 pb-10">
+        <div class="container-medium">
+          <div class="bg-holder d-none d-xl-block" style="background-image:url({% static "assets/img/bg/bg-left-27.png" %});background-size:auto;background-position:left;"></div>
+          <!--/.bg-holder-->
+          <div class="bg-holder d-none d-xl-block" style="background-image:url({% static "assets/img/bg/bg-right-27.png" %});background-size:auto;background-position:right;"></div>
+          <!--/.bg-holder-->
+          <div class="row g-3 position-relative">
+            <div class="col-lg-6">
+              <div class="row g-3">
+                <div class="col-md-7">
+                  <h4 class="fw-semibold mb-3">Home of</h4>
+                  <h2 class="fs-4 fw-semibold mb-3 mb-md-4">Comfort & <span class="text-primary-light fw-bold">Love</span></h2>
+                  <p class="mb-3 mb-md-0 text-body-tertiary">This is the perfect season for finding a place to  live and stay in  your beautiful home. At SmartSpace, you can easily select the bestliving option for your next beautiful home.<span class="d-none d-lg-inline-block d-xl-none">... </span><span class="d-lg-none d-xl-inline">This will help you with the budget that you’ll have, the residential place has a variety of houses from family homes to single spaces.</span></p>
+                </div>
+                <div class="col-6 col-md-5">
+                  <div class="img-zoom-hover position-relative h-100 rounded-3 overflow-hidden"><a href="#!"><img class="w-100 h-100 object-fit-cover" src="{% static "assets/img/gallery/35.jpg" %}" alt="" /></a>
+                    <div class="backdrop-faded"><a class="fw-bold fs-7 text-white stretched-link" href="#!">One Bedrooms</a>
+                      <p class="mb-0 text-white fs-9">15 houses</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-6 col-md-5">
+                  <div class="img-zoom-hover position-relative h-100 rounded-3 overflow-hidden"><a href="#!"> <img class="w-100 h-100 object-fit-cover" src="{% static "assets/img/gallery/36.jpeg" %}" alt="" /></a>
+                    <div class="backdrop-faded"><a class="fw-bold fs-7 text-white" href="#!">Two Bedrooms</a>
+                      <p class="mb-0 text-white fs-9">15 houses</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-7">
+                  <div class="img-zoom-hover position-relative h-100 rounded-3 overflow-hidden"><a href="#!"> <img class="w-100 h-md-100 object-fit-cover" src="{% static "assets/img/gallery/39.jpg" %}" alt="" height="220" /></a>
+                    <div class="backdrop-faded"><a class="fw-bold fs-7 text-white" href="#!">Shared spaces.</a>
+                      <p class="mb-0 text-white fs-9">5 spaces</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="d-flex flex-column gap-3 h-100">
+                <div class="img-zoom-hover position-relative h-100 rounded-3 overflow-hidden"><a href="#!"> <img class="w-100 h-lg-100 object-fit-cover" src="{% static "assets/img/gallery/38.jpg" %}" alt="" height="220" /></a>
+                  <div class="backdrop-faded"><a class="fw-bold fs-7 text-white" href="#!"> SmartSpace</a>
+                    <p class="mb-0 text-white fs-9">30 houses</p>
+                  </div>
+                </div><button class="btn btn-primary w-100 py-3 fs-8">Explore more<span class="fa-solid fa-chevron-right ms-2" data-fa-transform="down-2"></span></button>
+              </div>
+            </div>
+          </div>
+        </div><!-- end of .container-->
+      </section>
+     
+
+      <!-- ============================================-->
+      <!-- <section> begin ============================-->
+      <section class="pb-7 pt-0">
+        <div class="container-medium">
+          <div class="text-center mb-5">
+            <h3 class="mb-2 text-body-emphasis">Latest photos from our spaces</h3>
+            <p class="mb-0 text-body-tertiary">See how our tourists enjoyed their trip from images captured by them with Team Smart!</p>
+          </div>
+          <div class="row g-3">
+            <div class="col-md-6 col-xl-4">
+              <div class="img-zoom-hover rounded-3 overflow-hidden position-relative"><a href="#!"><img class="latest-img w-100 object-fit-cover" src="{% static "assets/img/gallery/51.jpeg" %}" alt="" /></a>
+                <div class="backdrop-faded"><a class="fw-semibold mb-0 text-secondary-lighter stretched-link" href="#!"><span class="fa-solid fa-location-dot text-secondary-lighter me-2"></span></a></div>
+              </div>
+            </div>
+            <div class="col-md-6 col-xl-4">
+              <div class="img-zoom-hover rounded-3 overflow-hidden position-relative"><a href="#!"><img class="latest-img w-100 object-fit-cover" src="{% static "assets/img/gallery/52.jpeg" %}" alt="" /></a>
+                <div class="backdrop-faded"><a class="fw-semibold mb-0 text-secondary-lighter stretched-link" href="#!"><span class="fa-solid fa-location-dot text-secondary-lighter me-2"></span></a></div>
+              </div>
+            </div>
+            <div class="col-md-6 col-xl-4">
+              <div class="img-zoom-hover rounded-3 overflow-hidden position-relative"><a href="#!"><img class="latest-img w-100 object-fit-cover" src="{% static "assets/img/gallery/53.jpeg" %}" alt="" /></a>
+                <div class="backdrop-faded"><a class="fw-semibold mb-0 text-secondary-lighter stretched-link" href="#!"><span class="fa-solid fa-location-dot text-secondary-lighter me-2"></span></a></div>
+              </div>
+            </div>
+            <div class="col-md-6 col-xl-4">
+              <div class="img-zoom-hover rounded-3 overflow-hidden position-relative"><a href="#!"><img class="latest-img w-100 object-fit-cover" src="{% static "assets/img/gallery/40.jpg" %}" alt="" /></a>
+                <div class="backdrop-faded"><a class="fw-semibold mb-0 text-secondary-lighter stretched-link" href="#!"><span class="fa-solid fa-location-dot text-secondary-lighter me-2"></span></a></div>
+              </div>
+            </div>
+            <div class="col-md-6 col-xl-4">
+              <div class="img-zoom-hover rounded-3 overflow-hidden position-relative"><a href="#!"><img class="latest-img w-100 object-fit-cover" src="{% static "assets/img/gallery/55.jpg" %}" alt="" /></a>
+                <div class="backdrop-faded"><a class="fw-semibold mb-0 text-secondary-lighter stretched-link" href="#!"><span class="fa-solid fa-location-dot text-secondary-lighter me-2"></span></a></div>
+              </div>
+            </div>
+            <div class="col-md-6 col-xl-4">
+              <div class="img-zoom-hover rounded-3 overflow-hidden position-relative"><a href="#!"><img class="latest-img w-100 object-fit-cover" src="{% static "assets/img/gallery/56.png" %}" alt="" /></a>
+                <div class="backdrop-faded"><a class="fw-semibold mb-0 text-secondary-lighter stretched-link" href="#!"><span class="fa-solid fa-location-dot text-secondary-lighter me-2"></span></a></div>
+              </div>
+            </div>
+          </div>
+        </div><!-- end of .container-->
+      </section><!-- <section> close ============================-->
+
+                    <!--/.bg-holder-->
+                    <div class="container-medium position-relative">
+                      <h3 class="mb-2 text-body-emphasis text-center text-xl-start">The best of our house</h3>
+                      <div class="d-xl-flex justify-content-between mb-5 text-center">
+                        <p class="mb-0 text-body-tertiary">This list will help you get insights into how much you’ll need to spend to afford accommodation.</p><button class="btn btn-link p-0 fs-8">View all<span class="fa-solid fa-chevron-right ms-2" data-fa-transform="shrink-3"></span></button>
+                      </div>
+                      <div class="row g-0 justify-content-center">
+                        <div class="col-sm-11 col-md-8 col-lg-6 col-xl-12">
+                          <div class="row gy-5 gx-xl-7 justify-content-between pe-4">
+                            <div class="col-xl-4">
+                              <div class="card card-img-shift border-0 mx-auto">
+                                <div class="rounded-3 overflow-hidden w-100 position-relative z-5"><img class="w-100" src="{% static "assets/img/gallery/45.jpeg" %}" alt="" height="250" /><button class="btn btn-wish position-absolute top-0 end-0 mt-3 me-3"><span class="far fa-heart"></span></button></div>
+                                <div class="card-body p-0">
+                                  <div class="card-content">
+                                    <div class="d-flex align-items-center justify-content-between flex-wrap gap-2 mb-4">
+                                      <div><span class="badge badge-Smart px-1 me-2 badge-Smart-warning">promoted</span><span class="badge badge-Smart px-1 badge-Smart-info">Couple package</span></div>
+                                      <h6><span class="fa-solid fa-star text-warning me-1"></span>4.8 (4 stay)</h6>
+                                    </div><a class="fw-bold fs-7 text-body-emphasis mb-2 text-primary-hover" href="#!">1 bedroom</a><a class="fw-semibold text-body-tertiary mb-3 d-block" href="#!"><span class="me-1" data-feather="map-pin"></span>Nairobi</a>
+                                    <h6 class="fe-semibold text-body-tertiary d-flex align-items-center gap-1 mb-4">From <span class="fw-bolder fs-7 text-body-highlight">30,000 Ksh</span>/ per month</h6><a href="housedetail" class="btn btn-primary px-5">Book Now</a>
+
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-xl-4">
+                              <div class="card card-img-shift border-0 mx-auto">
+                              <div class="rounded-3 overflow-hidden w-100 position-relative z-5"><img class="w-100" src="{% static "assets/img/gallery/46.jpg" %}" alt="" height="250" /><button class="btn btn-wish position-absolute top-0 end-0 mt-3 me-3"><span class="far fa-heart"></span></button></div>
+                                <div class="card-body p-0">
+                                  <div class="card-content">
+                                    <div class="d-flex align-items-center justify-content-between flex-wrap gap-2 mb-4">
+                                      <div><span class="badge badge-Smart px-1 me-2 badge-Smart-warning">promoted</span><span class="badge badge-Smart px-1 badge-Smart-info">Couple package</span></div>
+                                      <h6><span class="fa-solid fa-star text-warning me-1"></span>4.9 (5 stay)</h6>
+                                    </div><a class="fw-bold fs-7 text-body-emphasis mb-2 text-primary-hover" href="#!">2 bedroom</a><a class="fw-semibold text-body-tertiary mb-3 d-block" href=""><span class="me-1" data-feather="map-pin"></span>Nairobi</a>
+                                    <h6 class="fe-semibold text-body-tertiary d-flex align-items-center gap-1 mb-4">From <span class="fw-bolder fs-7 text-body-highlight">60,000 Ksh</span>/ per month</h6><button class="btn btn-primary px-5" href="housedetail">Book Now</button>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-xl-4">
+                              <div class="card card-img-shift border-0 mx-auto">
+                                <div class="rounded-3 overflow-hidden w-100 position-relative z-5"><img class="w-100" src="{% static "assets/img/gallery/gl47.jpeg" %}" alt="" height="250" /><button class="btn btn-wish position-absolute top-0 end-0 mt-3 me-3"><span class="far fa-heart"></span></button></div>
+                                <div class="card-body p-0">
+                                  <div class="card-content">
+                                    <div class="d-flex align-items-center justify-content-between flex-wrap gap-2 mb-4">
+                                      <div><span class="badge badge-Smart px-1 me-2 badge-Smart-warning">promoted</span><span class="badge badge-Smart px-1 badge-Smart-info"></span></div>
+                                      <h6><span class="fa-solid fa-star text-warning me-1"></span>4.8 (7 stay)</h6>
+                                    </div><a class="fw-bold fs-7 text-body-emphasis mb-2 text-primary-hover" href="#!">Double rooms</a><a class="fw-semibold text-body-tertiary mb-3 d-block" href="#!"><span class="me-1" data-feather="map-pin"></span>Nairobi</a>
+                                    <h6 class="fe-semibold text-body-tertiary d-flex align-items-center gap-1 mb-4">From <span class="fw-bolder fs-7 text-body-highlight">40,000 Ksh</span>/ per month</h6><button class="btn btn-primary px-5">Book Now</button>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </section>
+            
+      <!-- ============================================-->
+
+      <section class="pt-9 pb-10">
+        <div class="bg-holder d-none d-xl-block" style="background-image:url(../../assets/img/bg/bg-left-33.png);background-size:auto;background-position:-8% 38px;"></div>
+        <!--/.bg-holder-->
+        <div class="bg-holder d-none d-xl-block" style="background-image:url(../../assets/img/bg/bg-right-33.png);background-size:18%;background-position:right;"></div>
+        <!--/.bg-holder-->
+        <div class="bg-get-app"></div>
+        <div class="container-medium position-relative">
+          <div class="row g-0 justify-content-center">
+            <div class="col-lg-10 col-xl-8 col-xxl-7">
+              <div class="d-md-flex align-items-center gap-5 text-center text-md-start"><img class="img-fluid d-dark-none" src="../../assets/img/spot-illustrations/i-phone.png" alt="" style="max-height: 540px" /><img class="img-fluid d-light-none" src="../../assets/img/spot-illustrations/i-phone-dark.png" alt="" style="max-height: 540px" />
+                <div class="mt-5 mt-md-0">
+                  <div class="d-none d-md-block"><img class="d-dark-none" src="../../assets/img/spot-illustrations/41.png" alt="" width="200" /><img class="d-light-none" src="../../assets/img/spot-illustrations/dark_41.png" alt="" width="200" /></div>
+                  <h3 class="fw-bolder mt-4">Get The House Now</h3>
+                  <p class="text-body-tertiary">Designed to provide the best user experience possible to all our customers with activities ranging from anything thinkable to the unthinkables.</p><a class="me-2" href="#!"><img src="../../assets/img/generic/play-store.png" alt="" height="32" /></a><a href="#!"><img src="../../assets/img/generic/app-store.png" alt="" height="32" /></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================================-->
+      <!-- <section> begin ============================-->
+      <section class="booking-footer pb-6 pb-md-11 pt-15">
+        <div class="container-medium">
+          <div class="row gy-3 justify-content-between align-items-center">
+            <div class="col-auto"><a href="#!"><img src="../../assets/img/icons/logo-1.png" alt="" /></a></div>
+            <div class="col-auto">
+              <ul class="mb-0 list-unstyled d-flex flex-wrap">
+                <li class="me-3 me-sm-5"><a class="fs-8 fw-bold text-white" href="#!">Home</a></li>
+                <li class="me-3 me-sm-5"><a class="fs-8 fw-bold text-white" href="#!">About</a></li>
+                <li class="me-3 me-sm-5"><a class="fs-8 fw-bold text-white" href="#!">Contact</a></li>
+                <li class="me-3 me-sm-5"><a class="fs-8 fw-bold text-white" href="#!">FAQ</a></li>
+                <li><a class="fs-8 fw-bold text-white" href="#!">Gallery</a></li>
+              </ul>
+            </div>
+          </div>
+          <hr class="my-4" />
+          <div class="row gy-3 justify-content-between">
+            <div class="col-auto"> <a class="text-white me-4" href="#!"><span class="fa-brands fa-facebook-f"> </span></a><a class="text-white me-4" href="#!"><span class="fa-brands fa-twitter"></span></a><a class="text-white me-4" href="#!"><span class="fa-brands fa-linkedin-in"></span></a><a class="text-white" href="#!"><span class="fa-brands fa-behance"></span></a></div>
+            <div class="col-auto">
+              <p class="mb-0 text-white">Thank you for creating with Smart | 2024 © </p>
+            </div>
+          </div>
+        </div><!-- end of .container-->
+      </section><!-- <section> close ============================-->
+      <!-- ============================================-->
+
+    </main><!-- ===============================================-->
+    <!--    End of Main Content-->
+    <!-- ===============================================-->
+
+
+    {% endblock %}
